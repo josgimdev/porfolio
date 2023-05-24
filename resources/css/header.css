@@ -1,0 +1,103 @@
+@import url(variables.css);
+
+.navbar {
+	background: var(--background-color);
+}
+
+.navbar-fixed-top {
+	z-index: 1010;
+}
+
+.offcanvas {
+	background: var(--background-color) !important;
+	z-index: 1000 !important;
+}
+
+.toggler .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	margin: 4px 0 4px 0;
+	background-color: var(--background-color);
+	transition: all 0.2s;
+}
+
+.toggler {
+	background: var(--text-color) !important;
+	color: var(--background-color) !important;
+}
+
+.toggler:hover {
+	background: var(--text-hover) !important;
+}
+
+.toggler.collapsed {
+	background: var(--background-color) !important;
+	color: var(--text-color) !important;
+}
+
+.toggler.collapsed:hover {
+	background: var(--background-hover) !important;
+}
+
+.toggler.collapsed .icon-bar{
+	background: var(--text-color) !important;
+}
+
+.btn-custom {
+	background: var(--text-color) !important;
+	color: var(--background-color) !important;
+}
+
+.btn-custom:hover {
+	background: var(--text-hover) !important;
+}
+
+.btn-custom.collapsed {
+	background: var(--background-color) !important;
+	color: var(--text-color) !important;
+}
+
+.btn-custom.collapsed:hover {
+	background: var(--background-hover) !important;
+}
+
+.toggler .icon-bar:nth-of-type(1) {
+	transform-origin: center;
+	transform: translateY(3px) rotate(40deg);
+}
+
+.toggler .icon-bar:nth-of-type(2) {
+	transform-origin: center;
+	transform: translateY(-3px) rotate(-40deg);
+}
+
+.toggler.collapsed .icon-bar:nth-of-type(1) {
+	transform: rotate(0);
+}
+
+.toggler.collapsed .icon-bar:nth-of-type(2) {
+	transform: rotate(0);
+}
+
+.info {
+	border: 1px solid lightgray;
+	height: 20rem !important;
+}
+
+.list-group-item {
+	border: 0 !important;
+	margin-bottom: 5px !important;
+	font-size: 24px !important;
+	font-weight: bold !important;
+	background: none !important;
+}
+
+.list-group-item.sub {
+	margin-left: 10px !important;
+	margin-bottom: 1px !important;
+	margin-top: 1px !important;
+	font-size: 18px !important;
+	font-weight: normal !important;
+}

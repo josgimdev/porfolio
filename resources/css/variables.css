@@ -1,0 +1,7 @@
+/* variables globales*/
+:root {
+	--background-color: white;
+	--background-hover: #cccccc;
+	--text-color: black;
+	--text-hover: #404040;
+}

@@ -1,0 +1,87 @@
+@import url(variables.css);
+
+.proyecto {
+    object-fit: cover;
+    flex-basis: 100%;
+    position: relative;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    text-decoration: none;
+    height: 22rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.proyecto .texto{
+    align-content: flex-end;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.proyecto.flip .texto{
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.proyecto .cuerpo, .proyecto .btn{
+    display: none;
+}
+
+.proyecto .titulo {
+    margin: 0;
+}
+
+.proyecto.flip .titulo{
+   margin-bottom: 10px;
+}
+
+.proyecto.flip .cuerpo{
+    display: block;
+}
+
+.proyecto.flip .btn{
+    display: block;
+    background: var(--background-color) !important;
+	color: var(--text-color) !important;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    font-size: 18px;
+    border: 0;
+}
+
+.proyecto.flip .btn:hover{
+    background: #dbdbdb !important;
+}
+
+.categoria {
+    display: none;
+}
+
+.proyecto.flip .categoria {
+    display: block;
+}
